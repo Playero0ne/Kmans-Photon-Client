@@ -1,0 +1,40 @@
+        public static void KickGun()
+        {
+
+            bool flag = false;
+            bool flag2 = false;
+            List<InputDevice> list = new List<InputDevice>();
+            InputDevices.GetDevices(list);
+            InputDevices.GetDevicesWithCharacteristics(InputDeviceCharacteristics.HeldInHand | InputDeviceCharacteristics.Controller | InputDeviceCharacteristics.Right, list);
+            list[0].TryGetFeatureValue(CommonUsages.triggerButton, out flag);
+            list[0].TryGetFeatureValue(CommonUsages.gripButton, out flag2);
+            if (!flag2)
+            {
+                UnityEngine.Object.Destroy(MenuPatch.pointer);
+                MenuPatch.pointer = null;
+                return;
+            }
+            RaycastHit raycastHit;
+            Physics.Raycast(GorillaLocomotion.Player.Instance.rightHandTransform.position - GorillaLocomotion.Player.Instance.rightHandTransform.up, -GorillaLocomotion.Player.Instance.rightHandTransform.up, out raycastHit);
+            if (MenuPatch.pointer == null)
+            {
+                MenuPatch.pointer = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+                Object.Destroy(MenuPatch.pointer.GetComponent<Rigidbody>());
+                Object.Destroy(MenuPatch.pointer.GetComponent<SphereCollider>());
+                MenuPatch.pointer.transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
+            }
+            MenuPatch.pointer.transform.position = raycastHit.point;
+            if (flag2)
+            {
+                if (flag)
+                {
+			                    PhotonView componentInParent = raycastHit.collider.GetComponentInParent<PhotonView>();
+                    componentInParent.RPC("JoinPubWithFreinds", componentInParent.Owner, Array.Empty<object>());
+                    return;
+                }
+            }
+            else
+            {
+                GorillaTagger.Instance.myVRRig.enabled = true;
+            }
+        }

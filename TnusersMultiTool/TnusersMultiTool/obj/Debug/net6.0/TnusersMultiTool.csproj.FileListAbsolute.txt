@@ -1,0 +1,15 @@
+C:\Users\bould\source\repos\TnusersMultiTool\TnusersMultiTool\bin\Debug\net6.0\TnusersMultiTool.exe
+C:\Users\bould\source\repos\TnusersMultiTool\TnusersMultiTool\bin\Debug\net6.0\TnusersMultiTool.deps.json
+C:\Users\bould\source\repos\TnusersMultiTool\TnusersMultiTool\bin\Debug\net6.0\TnusersMultiTool.runtimeconfig.json
+C:\Users\bould\source\repos\TnusersMultiTool\TnusersMultiTool\bin\Debug\net6.0\TnusersMultiTool.dll
+C:\Users\bould\source\repos\TnusersMultiTool\TnusersMultiTool\bin\Debug\net6.0\TnusersMultiTool.pdb
+C:\Users\bould\source\repos\TnusersMultiTool\TnusersMultiTool\obj\Debug\net6.0\TnusersMultiTool.csproj.AssemblyReference.cache
+C:\Users\bould\source\repos\TnusersMultiTool\TnusersMultiTool\obj\Debug\net6.0\TnusersMultiTool.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bould\source\repos\TnusersMultiTool\TnusersMultiTool\obj\Debug\net6.0\TnusersMultiTool.AssemblyInfoInputs.cache
+C:\Users\bould\source\repos\TnusersMultiTool\TnusersMultiTool\obj\Debug\net6.0\TnusersMultiTool.AssemblyInfo.cs
+C:\Users\bould\source\repos\TnusersMultiTool\TnusersMultiTool\obj\Debug\net6.0\TnusersMultiTool.csproj.CoreCompileInputs.cache
+C:\Users\bould\source\repos\TnusersMultiTool\TnusersMultiTool\obj\Debug\net6.0\TnusersMultiTool.dll
+C:\Users\bould\source\repos\TnusersMultiTool\TnusersMultiTool\obj\Debug\net6.0\refint\TnusersMultiTool.dll
+C:\Users\bould\source\repos\TnusersMultiTool\TnusersMultiTool\obj\Debug\net6.0\TnusersMultiTool.pdb
+C:\Users\bould\source\repos\TnusersMultiTool\TnusersMultiTool\obj\Debug\net6.0\TnusersMultiTool.genruntimeconfig.cache
+C:\Users\bould\source\repos\TnusersMultiTool\TnusersMultiTool\obj\Debug\net6.0\ref\TnusersMultiTool.dll

@@ -1,0 +1,40 @@
+                        GorillaLocomotion.Player.Instance.GetComponent<Rigidbody>().velocity = Vector3.zero;
+                        if (UnityInput.Current.GetKey(KeyCode.C))
+                        {
+                        }
+                        if (UnityInput.Current.GetKey(KeyCode.L))
+                        {
+                            PhotonNetwork.Disconnect();
+                        }
+                        if (UnityInput.Current.GetKey(KeyCode.W))
+                        {
+                            GorillaLocomotion.Player.Instance.transform.position += GorillaLocomotion.Player.Instance.headCollider.transform.forward * Time.deltaTime * 5;
+                        }
+                        if (UnityInput.Current.GetKey(KeyCode.S))
+                        {
+                            GorillaLocomotion.Player.Instance.transform.position += GorillaLocomotion.Player.Instance.headCollider.transform.forward * Time.deltaTime * -5;
+                        }
+                        if (UnityInput.Current.GetKey(KeyCode.D))
+                        {
+                            GorillaLocomotion.Player.Instance.transform.position += GorillaLocomotion.Player.Instance.headCollider.transform.right * Time.deltaTime * 5;
+                        }
+                        if (UnityInput.Current.GetKey(KeyCode.A))
+                        {
+                            GorillaLocomotion.Player.Instance.transform.position += GorillaLocomotion.Player.Instance.headCollider.transform.right * Time.deltaTime * -5;
+                        }
+                        if (UnityInput.Current.GetKey(KeyCode.LeftArrow))
+                        {
+                            GorillaLocomotion.Player.Instance.transform.Rotate(0f, -1f, 0f);
+                        }
+                        if (UnityInput.Current.GetKey(KeyCode.RightArrow))
+                        {
+                            GorillaLocomotion.Player.Instance.transform.Rotate(0f, 1f, 0f);
+                        }
+                        if (UnityInput.Current.GetKey(KeyCode.LeftControl))
+                        {
+                            GorillaLocomotion.Player.Instance.transform.position += GorillaLocomotion.Player.Instance.headCollider.transform.up * Time.deltaTime * -5;
+                        }
+                        if (UnityInput.Current.GetKey(KeyCode.Space))
+                        {
+                            GorillaLocomotion.Player.Instance.transform.position += GorillaLocomotion.Player.Instance.headCollider.transform.up * Time.deltaTime * 5;
+                        }
